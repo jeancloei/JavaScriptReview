@@ -23,9 +23,14 @@ const deleteTodo = function (todos, todoText) {
     todos.splice(index, 1)
   }
 }
-
-deleteTodo(todos, 'Buy eggs')
-console.log(todos)
+const getThingsToDo = function (todos) {
+  return todos.filter(function (todo) {
+    return !todo.completed
+  })
+}
+console.log(getThingsToDo(todos))
+// deleteTodo(todos, 'Buy eggs')
+// console.log(todos)
 
 // console.log(`You have ${todos.length} todos!`)
 // console.log(`Todo: ${todos[0]}`)
