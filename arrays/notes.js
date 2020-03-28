@@ -1,16 +1,21 @@
 const notes = ['Note1', 'Note2', 'Note3']
 
+// console.log(notes.length)
+// console.log(notes[notes.length - 1])
+
+// Pop removes the last items 
+// console.log(notes.pop())
+
+// Push adds an item at the end
+// notes.push('My new notes')
+
+// console.log(notes.shift)
+// notes.unshift('My first notes')
+
+// Splice removes items
+notes.splice(1, 1, 'New second item')
+
+notes[2] = 'This is now the new note 3'
+
 console.log(notes.length)
-console.log(notes[notes.length - 1])
-
-const todos = [
-  'Buy eggs', 
-  'Walk the dog', 
-  'Clean the house',
-  'Order cat food', 
-  'Study'  
-]
-
-console.log(`You have ${todos.length} todos!`)
-console.log(`Todo: ${todos[0]}`)
-console.log(`Todo: ${todos[todos.length - 2]}`)
+console.log(notes)
